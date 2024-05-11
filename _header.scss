@@ -1,0 +1,60 @@
+#header{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    height: 10vh;
+    inset: 20px 0 0 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    font-family: "Alex Brush", cursive;
+  }
+
+@media (min-width: 1200px) {
+    .navbar a{
+        padding: 0 800px 0 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    #header{
+        inset: 10px 0 0 0;
+    }
+}
+
+@media (max-width: 690px) {
+    #header{
+        inset: 5px 0 0 0;
+    }
+}
+
+@media (max-width: 450px) {
+    #header{
+        inset: -5px 0 0 0;
+    }
+}
+
+#her-name{
+    margin: 10px 0 0 30px;
+    font-size: 6vw;
+    cursor: pointer;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 70vw;
+    font-size: 2.5vw;
+    margin: 0 0 0 0;
+    inset: auto 3vw auto auto;
+}
+
+#header a{
+    text-decoration: none;
+    color: black;
+    padding: 0 20px 0 0;
+}

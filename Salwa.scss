@@ -1,0 +1,33 @@
+@import './sizes';
+@import './header';
+@import './second-page';
+@import './cursors';
+@import './third-page';
+@import './first-page';
+@import './music-player';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.con{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+
+section{
+  height: 100vh;
+  position: relative;
+}
+
+#first-page {
+  background-color: #f5f5dc;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
