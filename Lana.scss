@@ -1,0 +1,33 @@
+@import './sizes';
+@import './header';
+@import './second-page';
+@import './cursors';
+@import './third-page';
+@import './first-page';
+@import './music-player';
+@import './fourth-page';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.con{
+   scroll-snap-type: y mandatory;
+   overflow-y: scroll;
+   height: 100vh;
+  scroll-behavior: smooth;
+}
+
+// @media (min-width:$wide) {
+
+//   section{
+//     scroll-snap-align: start;
+//   }
+  
+// }
+
+section{
+  height: 100vh;
+  position: relative;
+}

@@ -9,6 +9,7 @@
   align-items: center;
   overflow: scroll;
   position: relative;
+  border-bottom: solid rgb(0, 0, 194) 0px;
 }
 
 .page3-title{
@@ -31,12 +32,13 @@
 
 .video-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 1380px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90vw;
   position: absolute;
   column-gap: 40px;
   row-gap: 80px;
-  inset: 450px auto auto auto;
+  inset: 400px auto auto auto;
+  padding: 0 0 60px 0;
 
   div{
     display: flex;
@@ -78,16 +80,6 @@
   background-color: turquoise;
 }
 
-#film-7{
-  background-color: green;
-}
-
-#film-8{
-  margin-bottom: 50px;
-  background-color: yellow;
-
-}
-
 @media (max-width:$wide) {
     .page3-title{
       font-size: 10vw;
@@ -99,14 +91,12 @@
       width: 1000px;
       row-gap: 30px;
       inset: 400px auto auto auto;
+
+      div{
+        width: 400px;
+        aspect-ratio: 16/9;
+      }
     }
-
-    .video-grid div{
-      width: 400px;
-      aspect-ratio: 16/9;
-    }
-
-
 
     #byline3{
       font-size: 9vw;
@@ -114,31 +104,8 @@
 
     }
 
-@media (max-width: 900px) {
-  .page3-title{
-    font-size: 10vw;
-    inset: 15vh auto auto auto;
-  }
-
-  .video-grid{
-    grid-template-columns: 1fr;
-    width: 90vw;
-    row-gap: 60px;
-    inset: 40vh auto auto auto;
-  }
-
-  .video-grid div{
-    width: 90vw;
-    aspect-ratio: 16/9;
-    z-index: 0;
-  }
-
-  #byline3{
-    font-size: 9vw;
-  }
-}
-
 @media (max-width: $mobile) {
+
   .page3-title{
     font-size: 10vw;
     inset: 11vh auto auto auto;
@@ -149,7 +116,7 @@
     grid-template-columns: 1fr;
     width: 90vw;
     row-gap: 30px;
-    inset: 250px auto auto auto;
+    inset: 300px auto auto auto;
   }
 
   .video-grid div{

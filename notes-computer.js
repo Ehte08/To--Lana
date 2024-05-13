@@ -83,4 +83,12 @@ papers.forEach(paper => {
   p.init(paper);
 });
 
+const iglink = document.querySelector(".notes-heart")
+
+iglink.addEventListener('dblclick',iglinkopen)
+
+function iglinkopen(){
+    window.open('https://www.instagram.com/_ehte_08/');
+}
+
 }

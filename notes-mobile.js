@@ -90,11 +90,25 @@ papers.forEach(paper => {
   p.init(paper);
 });
 
+const iglink = document.querySelector(".notes-heart")
+
+iglink.addEventListener('tap',iglinkopen)
+
+function iglinkopen(){
+    window.open('https://www.instagram.com/_ehte_08/');
 }
 
-let notesHeart = document.querySelector('.notes-heart');
+}
+
+const notesHeart = document.querySelector('.notes-heart');
 notesHeart.addEventListener("dblclick", reset);
 function reset(){
   currentPaperX = 0;
   currentPaperY = 0;
 }
+
+const con = document.querySelector('.con')
+
+con.addEventListener("touchstart", e =>{
+  e.preventDefault()
+})

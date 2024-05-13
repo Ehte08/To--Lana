@@ -5,7 +5,14 @@ const videoAll = document.querySelectorAll(".clip")[i];
     if (window.screen.width > 900) {
     videoAll.addEventListener('mouseenter', play)
     videoAll.addEventListener('mouseleave', pause)
+    function play(){
+        videoAll.play();
     }
+    function pause(){
+        videoAll.pause();
+    }
+    }
+
     videoAll.addEventListener('click', playPause)
     function playPause(){
         if(videoAll.paused)
@@ -14,10 +21,6 @@ const videoAll = document.querySelectorAll(".clip")[i];
         {videoAll.pause(), videoAll.style.filter = "grayscale(100%)";}    
     }
     
-    function play(){
-        videoAll.play();
-    }
-    function pause(){
-        videoAll.pause();
-    }
+
 }
+
