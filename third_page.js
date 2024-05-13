@@ -6,10 +6,10 @@ const videoAll = document.querySelectorAll(".clip")[i];
     videoAll.addEventListener('mouseenter', play)
     videoAll.addEventListener('mouseleave', pause)
     function play(){
-        videoAll.play();
+        videoAll.play(), videoAll.style.filter = "grayscale(0%)";
     }
     function pause(){
-        videoAll.pause();
+        videoAll.pause(), videoAll.style.filter = "grayscale(100%)";
     }
     }
 
