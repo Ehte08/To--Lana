@@ -106,9 +106,3 @@ function reset(){
   currentPaperX = 0;
   currentPaperY = 0;
 }
-
-const con = document.querySelector('.con')
-
-con.addEventListener("touchstart", e =>{
-  e.preventDefault()
-})
