@@ -1,5 +1,6 @@
-if (window.screen.width > 900) 
-    {
+if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
+  document.querySelector('.cursor')?.remove();
+}
     const cursor = document.querySelector('.heart');
 
     document.addEventListener('mousemove', e => {
@@ -23,4 +24,4 @@ if (window.screen.width > 900)
     document.addEventListener('mousemove', e => {
             finalcursor.setAttribute("style","top: "+(e.pageY+20)+"px; left: "+(e.pageX+24)+"px")
      })
-}
+

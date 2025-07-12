@@ -1,5 +1,3 @@
-if (window.screen.width > 900) {
-
 let highestZ = 1;
 
 class Paper {
@@ -89,6 +87,4 @@ iglink.addEventListener('dblclick',iglinkopen)
 
 function iglinkopen(){
     window.open('https://www.instagram.com/_ehte_08/');
-}
-
 }

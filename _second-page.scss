@@ -22,6 +22,9 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  touch-action: none;      // prevents browser default pan/zoom
+  user-select: none;
+  will-change: transform;  // improves performance
 }
 
 .paper.heart-cont {
