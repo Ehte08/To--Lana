@@ -104,9 +104,6 @@
 
 .paper.image {
   padding: 10px;
-}
-
-.paper.image p {
   font-size: 3vw;
 }
 
@@ -118,6 +115,11 @@ p {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.paper.top p {
+  white-space: nowrap;
+  font-size: 7vw;
 }
 
 .cursor div {
@@ -483,6 +485,7 @@ sizes and transition times to each heart */
   overflow-y: scroll;
   height: 100vh;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 section {

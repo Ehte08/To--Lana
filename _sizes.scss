@@ -1,4 +1,4 @@
-$wide: 1300px;
-$mobile: 900px;
-$semiwide: 1100px;
-$iPhone: 450px;
+$wide: "(max-width: 1300px)";
+$mobile: "(max-width: 900px)";
+$semiwide: "(max-width: 1100px)";
+$iPhone: "(max-width: 450px)";

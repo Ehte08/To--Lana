@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import './sizes';
 
 #second-page {
   height: 100vh;
@@ -46,10 +47,9 @@
 
 .paper.image {
   padding: 10px;
+    font-size: 3vw;
 }
-.paper.image p {
-  font-size: 3vw;
-}
+
 
 p {
   font-family: 'Zeyada';
@@ -58,3 +58,8 @@ p {
   opacity: 0.75;
   user-select: none;
   }
+
+.paper.top p{
+  white-space: nowrap;
+  font-size: 7vw;
+}

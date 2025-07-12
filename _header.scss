@@ -28,7 +28,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media #{$iPhone} {
     #header{
         inset: -5px 0 0 0;
     }

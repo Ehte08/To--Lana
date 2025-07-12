@@ -83,8 +83,15 @@ papers.forEach(paper => {
 
 const iglink = document.querySelector(".notes-heart")
 
-iglink.addEventListener('dblclick',iglinkopen)
+iglink.addEventListener('click',iglinkopen)
 
 function iglinkopen(){
-    window.open('https://www.instagram.com/_ehte_08/');
+    window.open('https://www.instagram.com/_ehte_08/', 250);
 }
+
+function reset() {
+    this.offsetX = 0;
+    this.offsetY = 0;
+    this.paper.style.transform = `translate(0px, 0px) rotate(${this.rotation}deg)`;
+  }
+
